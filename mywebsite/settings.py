@@ -51,6 +51,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # developer installed
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'mywebsite.urls'
@@ -131,9 +133,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'mywebsite/static')
 ]
 
-
+"""
 try :
     from .local_settings import *
 except ImportError :
     pass
-     
+"""   
