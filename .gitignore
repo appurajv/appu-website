@@ -151,7 +151,7 @@ dmypy.json
 .prof
 
 #static files
-/static
+#/static
 
 # End of https://www.toptal.com/developers/gitignore/api/django
 
