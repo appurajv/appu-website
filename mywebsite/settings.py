@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['appu-website.herokuapp.com','appu.ninja','.appu.ninja' ]
+ALLOWED_HOSTS = ['127.0.0.1','appu-website.herokuapp.com','appu.ninja','.appu.ninja' ]
 
 
 # Application definition
@@ -86,7 +86,7 @@ DATABASES = {
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
-        'PORT': '5432'
+        'PORT': '5432',
     }
 }
 
